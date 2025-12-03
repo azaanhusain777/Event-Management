@@ -1,142 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LearnHub - Education Blog</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    header {
-      background-color: #2980b9;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    header h1 {
-      font-size: 32px;       /* smaller font size */
-      max-width: 300px;      /* limits width of title */
-      margin: 0 auto;        /* centers title */
-    }
-    header p {
-      line-height: 1.2;      /* reduced line spacing */
-      max-width: 400px;      /* keeps subtitle narrower */
-      margin: 10px auto;     /* centers subtitle */
-    }
-    nav {
-      background-color: #3498db;
-      text-align: center;
-      padding: 10px;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-    section {
-      padding: 20px;
-    }
-    .post {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      max-width: 600px;      /* narrower post width */
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .post h3 {
-      margin-top: 0;
-      color: #2c3e50;
-    }
-    .post p {
-      line-height: 1.3;      /* reduced line spacing for blog text */
-    }
-    button {
-      background-color: #27ae60;
-      color: white;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #2ecc71;
-    }
-    footer {
-      background-color: #2980b9;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Events - Event Management</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;}
+header {
+background-color: #8e44ad;
+color: white;
+text-align: center;
+padding: 20px;
+nav {
+background-color: #9b59b6;
+text-align: center;
+padding: 10px;}
+nav a {
+margin: 0 15px;
+text-decoration: none;
+color: white;
+font-weight: bold;}
+section {
+padding: 20px;}
+.event-listings {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;}
+.event {
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 8px;
+width: 250px;
+margin: 15px;
+text-align: center;
+padding: 15px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+.event img {
+width: 200px;
+height: 120px;
+border-radius: 5px;}
+.testimonials {
+background-color: #ecf0f1;
+padding: 15px;
+border-radius: 8px;}
+.testimonial {
+margin-bottom: 15px;
+font-style: italic}
+form {
+background-color: #fff;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+max-width: 400px;
+margin: auto;}
+form input, form select, form button {
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+border: 1px solid #ccc;
+border-radius: 5px;}
+form button {
+background-color: #27ae60;
+color: white;
+cursor: pointer;}
+form button:hover {
+background-color: #2ecc71; }
+footer {
+background-color: #8e44ad;
+color: white;
+text-align: center;
+padding: 10px;
+margin-top: 20px; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>LearnHub</h1>
-    <p>Sharing knowledge, one post at a time</p>
-  </header>
-
-  <nav>
-    <a href="#latest">Latest Posts</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <main>
-    <!-- Blog Posts Section -->
-    <section id="latest">
-      <h2>Latest Posts</h2>
-
-      <div class="post">
-        <h3>How to Stay Motivated While Studying</h3>
-        <p>Consistency is key when learning new topics. Break your study sessions into small chunks and reward yourself after completing them.</p>
-        <button onclick="likePost('Motivation Post')">Like 👍</button>
-      </div>
-
-      <div class="post">
-        <h3>Top 5 Tips for Learning HTML & CSS</h3>
-        <p>Start with the basics, practice by building small projects, and don’t be afraid to experiment with styles.</p>
-        <button onclick="likePost('HTML & CSS Tips')">Like 👍</button>
-      </div>
-
-      <div class="post">
-        <h3>Why Reading Improves Your Writing</h3>
-        <p>Reading exposes you to different styles and vocabularies, which naturally enhances your writing skills.</p>
-        <button onclick="likePost('Reading Post')">Like 👍</button>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <h2>About LearnHub</h2>
-      <p>LearnHub is a student-driven blog that shares tips, resources, and motivation for learners worldwide.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: info@learnhub.com</p>
-      <p>Phone: +91 9876543210</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 LearnHub Blog. All rights reserved.</p>
-  </footer>
-
-  <script>
-    function likePost(postTitle) {
-      alert("You liked the post: " + postTitle + "!");
-    }
-  </script>
+<header>
+<h1>Elite Events</h1>
+<p>Making your moments unforgettable</p>
+</header>
+<nav>
+<a href="#events">Events</a>
+<a href="#booking">Booking</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#contact">Contact</a>
+</nav>
+<main>
+<!-- Event Listings -->
+<section id="events">
+<h2>Upcoming Events</h2>
+<div class="event-listings">
+<div class="event">
+<img src="C:\Users\azaan\Desktop\College Acad\Web Dev\Experiments\Event
+managent\wedding.jpeg" alt="Wedding Event">
+<h3>Grand Wedding</h3>
+<p>Date: 15 Dec 2025</p>
+<p>Location: Delhi</p>
+</div>
+<div class="event">
+<img src="C:\Users\azaan\Desktop\College Acad\Web Dev\Experiments\Event
+managent\con.jpeg" alt="Conference Event">
+<h3>Business Conference</h3>
+<p>Date: 20 Jan 2026</p>
+<p>Location: Mumbai</p>
+</div>
+<div class="event">
+<img src="C:\Users\azaan\Desktop\College Acad\Web Dev\Experiments\Event
+managent\concert.jpeg" alt="Concert Event">
+<h3>Music Concert</h3>
+<p>Date: 5 Feb 2026</p>
+<p>Location: Bangalore</p>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section id="booking">
+<h2>Book Your Event</h2>
+<form onsubmit="return bookEvent()">
+<label for="name">Your Name:</label>
+<input type="text" id="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+<label for="event">Select Event:</label>
+<select id="event" required>
+<option value="Wedding">Wedding</option>
+<option value="Conference">Conference</option>
+<option value="Concert">Concert</option>
+</select>
+<button type="submit">Book Now</button>
+</form>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+<h2>What Our Clients Say</h2>
+<div class="testimonial">"Elite Events made our wedding magical. Everything was
+perfect!" – Priya & Arjun</div>
+<div class="testimonial">"The conference was seamless and professional. Highly
+recommended." – Mr. Sharma</div>
+<div class="testimonial">"Best concert experience ever! Great organization." –
+Riya</div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email: info@eliteevents.com</p>
+<p>Phone: +91 9876543210</p>
+</section>
+</main>
+<footer>
+<p>&copy; 2025 Elite Events. All rights reserved.</p>
+</footer>
+<script>
+function bookEvent() {
+const name = document.getElementById("name").value;
+const event = document.getElementById("event").value;
+alert("Thank you " + name + "! Your booking for " + event + " has been received.");
+return false; // prevents actual form submission
+}
+</script>
 </body>
 </html>
