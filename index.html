@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - Education Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2980b9;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 32px;       /* smaller font size */
+      max-width: 300px;      /* limits width of title */
+      margin: 0 auto;        /* centers title */
+    }
+    header p {
+      line-height: 1.2;      /* reduced line spacing */
+      max-width: 400px;      /* keeps subtitle narrower */
+      margin: 10px auto;     /* centers subtitle */
+    }
+    nav {
+      background-color: #3498db;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    .post {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 600px;      /* narrower post width */
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .post h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .post p {
+      line-height: 1.3;      /* reduced line spacing for blog text */
+    }
+    button {
+      background-color: #27ae60;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2ecc71;
+    }
+    footer {
+      background-color: #2980b9;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LearnHub</h1>
+    <p>Sharing knowledge, one post at a time</p>
+  </header>
+
+  <nav>
+    <a href="#latest">Latest Posts</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Blog Posts Section -->
+    <section id="latest">
+      <h2>Latest Posts</h2>
+
+      <div class="post">
+        <h3>How to Stay Motivated While Studying</h3>
+        <p>Consistency is key when learning new topics. Break your study sessions into small chunks and reward yourself after completing them.</p>
+        <button onclick="likePost('Motivation Post')">Like 👍</button>
+      </div>
+
+      <div class="post">
+        <h3>Top 5 Tips for Learning HTML & CSS</h3>
+        <p>Start with the basics, practice by building small projects, and don’t be afraid to experiment with styles.</p>
+        <button onclick="likePost('HTML & CSS Tips')">Like 👍</button>
+      </div>
+
+      <div class="post">
+        <h3>Why Reading Improves Your Writing</h3>
+        <p>Reading exposes you to different styles and vocabularies, which naturally enhances your writing skills.</p>
+        <button onclick="likePost('Reading Post')">Like 👍</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About LearnHub</h2>
+      <p>LearnHub is a student-driven blog that shares tips, resources, and motivation for learners worldwide.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@learnhub.com</p>
+      <p>Phone: +91 9876543210</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LearnHub Blog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function likePost(postTitle) {
+      alert("You liked the post: " + postTitle + "!");
+    }
+  </script>
+</body>
+</html>
